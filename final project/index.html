@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Portfolio with Jokebot</title>
+  <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navebar">
+    <a href="#home" class="logo">portfolio.</a>
+    <ul>
+      <li class="active"><a href="#home">Home</a></li>
+      <li><a href="#jokebot">Jokebot</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+      <li><a href="#services">Services</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <!-- Home Section -->
+  <section class="home" id="home">
+    <div class="home-info">
+      <h1>Muhammad Musa</h1>
+      <h2>I'm a Frontend Developer</h2>
+      <p>Creative, passionate, and focused on bringing UI/UX designs to life through ____________ <br> modern web technologies.</p>
+      <div class="btn-sci">
+        <a href="#" class="btn">Download CV</a>
+        <div class="sci">
+          <a href="#"><i class='bx bxl-linkedin'></i></a>
+          <a href="#"><i class='bx bxl-github'></i></a>
+          <a href="#"><i class='bx bxl-facebook-circle'></i></a>
+        </div>
+      </div>
+    </div>
+    <div class="img-box">
+      <div class="circle"></div>
+      <div class="img-item">
+        <img src="musa.jpg" alt="img" />
+      </div>
+    </div>
+  </section>
+
+  <!-- Jokebot Section -->
+  <section id="jokebot" class="jokebot-section">
+    <div class="chat-header">
+      <h2>Jokebot</h2>
+    </div>
+    <div class="chat-container" id="chatContainer">
+      <div class="chat-message bot-message">
+        <div class="message-bubble">Hi, I'm Jokebot! How can I assist you?</div>
+      </div>
+    </div>
+    <div class="input-area">
+      <textarea id="userInput" placeholder="Type a message..." rows="1"></textarea>
+      <button onclick="sendMessage()">
+        <i class="fas fa-paper-plane"></i>
+      </button>
+    </div>
+  </section>
+
+  <!-- Portfolio Section -->
+  <section id="portfolio" class="section">
+    <div class="section-header">
+      <h2>My Portfolio</h2>
+      <p>Here are some of the projects <br>I have built recently.</p>
+    </div>
+    <div class="portfolio-grid">
+      <div class="portfolio-item">Project 1</div>
+      <div class="portfolio-item">Project 2</div>
+      <div class="portfolio-item">Project 3</div>
+    </div>
+  </section>
+
+  <!-- Services Section -->
+  <section id="services" class="section">
+    <div class="section-header">
+      <h2>Services</h2>
+      <p>What I can do for you</p>
+    </div>
+    <div class="services-grid">
+      <div class="service-card">Web Design</div>
+      <div class="service-card">Responsive Development</div>
+      <div class="service-card">UI/UX Design</div>
+    </div>
+  </section>
+
+  <!-- Contact Section -->
+  <section id="contact" class="section">
+    <div class="section-header">
+      <h2>Contact Me</h2>
+      <p>Get in touch for work or collaborations.</p>
+    </div>
+    <form class="contact-form">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea rows="5" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="footer-content">
+      <p>&copy; 2025 Musa. All rights reserved.</p>
+      <div class="footer-links">
+        <a href="#home">Home</a>
+        <a href="#jokebot">Jokebot</a>
+        <a href="#portfolio">Portfolio</a>
+        <a href="#services">Services</a>
+        <a href="#contact">Contact</a>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="js/script.js"></script>
+</body>
+</html>
